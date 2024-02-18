@@ -13,8 +13,13 @@ public class UserService {
 
 	@Autowired
 	private UserRepo userRepo;
-	
+	 
 	public List<UserDetails> retriveAllUser(){
+		List<UserDetails> allUsers = userRepo.findAll();
+			return userRepo.findAll();
+	}
+	
+	public List<UserDetails> retriveAllUsers(){
 		List<UserDetails> allUsers = userRepo.findAll();
 			return userRepo.findAll();
 	}
@@ -24,6 +29,7 @@ public class UserService {
 		return userRepo.save(user);
 	}
 	
+
 	
 	
 }
