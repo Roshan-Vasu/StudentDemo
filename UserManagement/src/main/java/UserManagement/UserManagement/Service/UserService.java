@@ -19,17 +19,8 @@ public class UserService {
 			return userRepo.findAll();
 	}
 	
-	public List<UserDetails> retriveAllUsers(){
-		List<UserDetails> allUsers = userRepo.findAll();
-			return userRepo.findAll();
-	}
-	
 	public UserDetails addUser(UserDetails user) {
-		
 		return userRepo.save(user);
 	}
-	
-
-	
 	
 }
