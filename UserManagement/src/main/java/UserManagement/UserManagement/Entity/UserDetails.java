@@ -12,7 +12,7 @@ public class UserDetails {
 	private String lName;
 	private String emailId;
 	
-	UserDetails (){
+	UserDetails (){ 
 		
 	}
 
